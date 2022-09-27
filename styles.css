@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box !important;
+
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    background-image: url("bg1.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    backdrop-filter: blur(0px);
+ 
+    
+}
+
+.books-container{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.book-card{
+    color:white;
+    display: block;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("book.png");
+    background-position: center;
+    background-size: cover;
+
+    box-shadow: 2px 2px 5px black;
+
+    background-repeat: no-repeat;
+    
+}
+
+.form-container, .books-container{
+    background-color: rgba(219, 180, 150, 0.884);
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 1rem;
+    border: 6px double rgb(216, 120, 90);
+    box-shadow: 0px 0px 10px black;
+
+}
+
+.form-container h2{
+    margin-top: 0px;
+}
