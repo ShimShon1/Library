@@ -1,6 +1,9 @@
 //varibales
 let myLibrary = [];
 
+
+
+submit = document.querySelector('button')
 submit = document.querySelector('button')
 BooksContainer = document.querySelector(".books-container")
 
@@ -36,28 +39,29 @@ function addBook(){
 }
 
 
-submit = document.querySelector('button')
 
 function createBook(authorName,titleName,pagesAmount){
-
 
     let newBook = document.createElement("div")
     let titlePara = document.createElement("p")
     let authorPara = document.createElement("p")
-    let byPara = document.createElement("p")
+    let pages = document.createElement("p")
 
-    byPara.textContent = "By"
-    titlePara = titleName
-    authorPara = authorName
-
-
+    pages.classList.add("pages")
+    titlePara.classList.add("book-name")
+    authorPara.classList.add("author-name")
     newBook.classList.add("book-card")
+
+    titlePara.textContent = titleName
+    authorPara.textContent = "By " + authorName
+    pages.textContent =  pagesAmount + " pages"
+
     BooksContainer.append(newBook)
 
     newBook.append(titlePara)
-    newBook.append(byPara)
     newBook.append(authorPara)
+    newBook.append(pages)
 
-
+    BooksContainer.style.backdropFilter= 'blur(4px);'
 }
 
