@@ -20,19 +20,28 @@
             <h2>Add your book!</h2>
             <form action="">
            
+                <div class="form-div">
+                    <label for="author">Author:</label>
+                    <input id="author" type="text" name="author" required>
+                </div>
+
+                <div class="form-div">
+                    <label for="title">Title:</label>
+                    <input id="title" type="text" name="title" required>
+                </div>
+
+                <div class="form-div">
+                    <label for="page">Pages:</label>
+                    <input id="pages" type="number" name="pages" required>
+                </div>
+
+                <div class="form-div check-div">
+                    <input type="checkbox" id="read">
+                    <label for="read">read</label>
+                </div>
                 
-                <label for="author">Author:</label>
-                <input id="author" type="text" name="author" required>
+                    <button type="button" >Submit</button>
 
-                <label for="title">Title:</label>
-                <input id="title" type="text" name="title" required>
-
-                <label for="page">Pages:</label>
-                <input id="pages" type="number" name="pages" required>
-
-                
-
-                <button type="button" >Submit</button>
             </form>
 
         
@@ -42,6 +51,10 @@
 
         <div class="books-container">
             <div class="book-card">
+                <div class="icons">
+                    <img src="trash-can.svg" class="icon trash" alt="">
+                    <img src="check-bold.svg" class="icon check" alt="">
+                </div>
 
                 <p class="book-name">Spliting</p>
 
@@ -52,18 +65,9 @@
 
             </div>
             
-            <div class="book-card">
+            
 
-                <p class="book-name"> Barbarian</p>
-
-                <p class="authoer-name">By Kuis Kaka</p>
-
-                <p class="pages">356 pages</p>
-
-
-            </div>
-
-        </div>
+        
 
 
 

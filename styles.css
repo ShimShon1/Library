@@ -57,7 +57,25 @@ main{
     
     
 }
+img.icon{
+    width: 20px;
+    margin-top: 2px;
 
+}
+.check{
+    box-sizing: content-box !important;
+    border-left:1px solid black;
+ 
+}
+
+.icons{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background-color: rgba(128, 128, 128, 0.315);
+    border: none !important;
+    cursor: pointer;
+}
 .pages{
     position: absolute;
     top: 5px;
@@ -71,10 +89,7 @@ main{
     font-size: 1.5rem;
 }
 .book-card p{
-    /* width: 100%;
-    text-align: center;
-    background-color: rgba(128, 128, 128, 0.459);
-    border-radius: 5px; */
+   
     border-bottom: 1px solid rgb(192, 58, 40);
 }
 .form-container, .books-container{
@@ -92,33 +107,48 @@ main{
     margin-top: 0px;
 }
 
-form{
-   
-    font-size: 1.6rem;
-
-}
-
-label{
-    margin-left: 10%;
-    margin-right: 5px;
-}
 
 input{
     border-radius: 3px;
     background-color: rgba(212, 152, 152, 0.521);
-    color: white;
+    
     border: 1px solid rgb(216, 120, 90);
+    width: 80%;
 }
 
+#read{
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    accent-color: red;
+}
+
+.check-div{
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+}
 
 button{
+    width: 100px;
     padding: 0.6rem;
     border-radius: 6px;
-    margin-left: 5%;
-    width: 6%;
     cursor: pointer;
-    background-color: rgba(173, 12, 12, 0.445);
+    background-color: rgba(141, 13, 13, 0.445);
     border: 3px solid rgb(216, 120, 90);
-
+    min-width: 80px;
     color: black;
+}
+
+form{
+    width: 100%;
+    justify-content: space-around;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+input{
+    width: 200px;
 }
