@@ -2,9 +2,6 @@
 let myLibrary = [{name:"Some Roman",title:"Gladitaor",pages:"213"},
 {name:"Moses",title:"Spliting",pages:"1"}];
 
-
-
-
 submit = document.querySelector('button')
 submit = document.querySelector('button')
 BooksContainer = document.querySelector(".books-container")
@@ -13,8 +10,6 @@ BooksContainer = document.querySelector(".books-container")
 //event listener
 
 createBooks()
-
-
 submit.addEventListener("click",function(){
     addBook()
 })
@@ -40,8 +35,6 @@ function addBook(){
     createBooks()
 
 }
-
-
 
 function createBooks(){
     BooksContainer.innerHTML = ''
@@ -72,14 +65,9 @@ function createBooks(){
         icons.append(trash)
         icons.append(check)
         
-
-        
         titlePara.textContent = myLibrary[i].title
         authorPara.textContent = "By " + myLibrary[i].name
         pages.textContent =  myLibrary[i].pages + " pages"
-
-     
-
 
         BooksContainer.append(newBook)
         newBook.append(titlePara)
@@ -109,6 +97,7 @@ function createBooks(){
     }
 
     for (let i = 0; i < allCheck.length; i++) {
+        console.log("run")
         allCheck[i].addEventListener("click", function(){
             if (myLibrary[i].read){
                 myLibrary[i].read = false
@@ -125,7 +114,7 @@ function createBooks(){
             allTrash = document.querySelectorAll(".trash")
             allTrash[i].addEventListener("click",function(){
 
-                myLibrary.splice(i)
+                myLibrary.splice(i,1)
                 createBooks()
 
         })
@@ -137,5 +126,3 @@ function createBooks(){
    
 
 }
-
-
